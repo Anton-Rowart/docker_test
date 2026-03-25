@@ -1,0 +1,156 @@
+
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "sans-serif";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+  color: #fffefa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --secondary-text: #9c9c9c;
+  --background-card: #252525;
+  --text-color: #fffefa;
+  --primary-color:#4568dc;
+  --primary-color-hover: #6c87eb;
+  --nav-btn-color: #383836;
+  --transition: all 0.3s ease-in-out;
+}
+
+a {
+  font-weight: 500;
+  color: #8d8d8d;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #fffefa;
+}
+
+body {
+  display: flex;
+}
+
+input {
+  height: 55px;
+  background-color: #222;
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+}
+
+input:target {
+  border: inset;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.more_btn {
+  padding: 2px 15px;
+  background: linear-gradient(153deg, rgba(140, 45, 229, 1) 0%, rgba(255, 112, 15, 1) 100%);
+  border-radius: 100px;
+}
+
+.avatar {
+  background: linear-gradient(153deg, rgba(140, 45, 229, 1) 0%, rgba(255, 112, 15, 1) 100%);
+  padding: 1px;
+}
+
+.avatar>div {
+  background: #141414;
+  padding: 1px;
+}
+
+.setting_btn {
+  height: 55px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fffefa;
+  transition: var(--transition);
+}
+
+.buy_btn {
+  min-height: 55px;
+  width: 100%;
+  background: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%);
+  background-size: 200% auto;
+  color: #fffefa;
+  transition: var(--transition);
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px;
+}
+
+.buy_btn:hover {
+  background-position: right center; 
+}
+
+.buy_btn_price {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.setting_btn:hover {
+  background-color: var(--primary-color-hover);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+  background-color: #243670;
+  color: var(--secondary-text);
+}
+
+button:disabled:hover {
+  background-color: #243670;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
